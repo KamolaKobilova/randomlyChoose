@@ -43,5 +43,16 @@ li img {
   margin-top: 140px;
   margin-left: 20px;
 }
-
-
+.you {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+.comp {
+    position: absolute;
+    top: 400px;
+    left: 800px;
+}
+.result {
+    
+}

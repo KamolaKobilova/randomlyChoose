@@ -7,21 +7,21 @@
 
   rock.addEventListener('click', function(){
     const ww = document.getElementById('ww')
-    ww.innerHTML = ` <li id="handUp" class="class1"><img src="./assets/1 11.00.27 AM.png"><br></li> `
+    ww.innerHTML = ` <li id="handUp" class="class1"><img src="./assets/rock.png"><br></li> `
 })
 paper.addEventListener('click', function(){
     const ww = document.getElementById('ww')
-    ww.innerHTML = ` <li id="handDown" class="class1"><img src="./assets/2 11.00.26 AM.png"><br></li> `
+    ww.innerHTML = ` <li id="handDown" class="class1"><img src="./assets/paper.png"><br></li> `
 })
 scissors.addEventListener('click', function(){
     const ww = document.getElementById('ww')
-    ww.innerHTML = ` <li id="scissors" class="class1"><img src="./assets/3 11.00.26 AM.png"><br></li> `
+    ww.innerHTML = ` <li id="scissors" class="class1"><img src="./assets/scissors.png"><br></li> `
 })
 ////
 const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
-const possibleChoices = document.querySelectorAll('button')
+const possibleChoices = document.querySelectorAll('li')
 let userChoice
 let computerChoice
 let result

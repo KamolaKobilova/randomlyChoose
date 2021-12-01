@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
-  <h2>Computer Choice: <span id="computer-choice"></span></h2>
-  <h2>Your Choice: <span id="user-choice"></span></h2>
-  <h2>Result: <span id="result"></span></h2>
+  <h2 class="comp">Computer Choice: <span id="computer-choice"></span></h2>
+  <h2 class="you">Your Choice: <span id="user-choice"></span></h2>
+  <h2 class="result">Result: <span id="result"></span></h2>
 
-  <button id="rock">rock</button>
+  <!-- <button id="rock">rock</button>
   <button id="paper">paper</button>
-  <button id="scissors">scissors</button>
+  <button id="scissors">scissors</button> -->
 
       <div class="main">
-        <li id="rock"><img src="./assets/1 11.00.27 AM.png"><br> Rock</li>
-        <li id="paper"><img src="./assets/2 11.00.26 AM.png"><br>Paper</li>
-        <li id="scissors"><img src="./assets/3 11.00.26 AM.png"><br> Scissors</li>
+        <li id="rock"><img src="./assets/rock.png"><br>Rock</li>
+        <li id="paper"><img src="./assets/paper.png"><br>Paper</li>
+        <li id="scissors"><img src="./assets/scissors.png"><br> Scissors</li>
       </div>
       <h2 id="ww">ds</h2>
-
+       <h2 id="resultDisplay"></h2>
     
 
-    <button id="btn">Play</button>
+    <button id="btn" onclick="getResult()">Play</button>
     <script src="script.js"></script>
 </body>
 </html>
