@@ -1,24 +1,21 @@
-// how to win
-  var rock  = document.getElementById('rock');
-  var paper = document.getElementById('paper');
-  var scissors = document.getElementById('scissors');
-  var btn = document.getElementById('btn')
-  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Tutorial</title>
+  </head>
+  <body>
+      
+    <h2>Computer Choice: <span id="computer-choice"></span></h2>
+    <h2>Your Choice: <span id="user-choice"></span></h2>
+    <h2>Result: <span id="result"></span></h2>
 
-  rock.addEventListener('click', function(){
-    const ww = document.getElementById('ww')
-    ww.innerHTML = ` <li id="handUp" class="class1"><img src="./assets/1 11.00.27 AM.png"><br></li> `
-})
-paper.addEventListener('click', function(){
-    const ww = document.getElementById('ww')
-    ww.innerHTML = ` <li id="handDown" class="class1"><img src="./assets/2 11.00.26 AM.png"><br></li> `
-})
-scissors.addEventListener('click', function(){
-    const ww = document.getElementById('ww')
-    ww.innerHTML = ` <li id="scissors" class="class1"><img src="./assets/3 11.00.26 AM.png"><br></li> `
-})
-////
-const computerChoiceDisplay = document.getElementById('computer-choice')
+    <button id="rock">rock</button>
+    <button id="paper">paper</button>
+    <button id="scissors">scissors</button>
+
+    <script>
+       const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
@@ -72,3 +69,8 @@ function getResult() {
   }
   resultDisplay.innerHTML = result
 }
+
+        
+    </script>
+  </body>
+</html>
