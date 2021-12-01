@@ -1,0 +1,23 @@
+li {
+    list-style: none;
+    width: 160px;
+    background-color: rgba(196, 196, 196, 0.1);
+   
+    border: 1px solid white;
+    text-align: center;
+}
+button img {
+    width: 100px;
+}
+
+button {
+   border-radius: 50%;
+   border-color: white;
+}
+#h2 {
+    position: relative;
+    top: 100px;
+    left: 400px;
+}
+
+

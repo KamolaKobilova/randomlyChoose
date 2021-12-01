@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #fefef3;
+    }
+    @keyframes spin{
+    from { transform: rotate(0);}
+    to { transform: rotate(360deg);}
+}
+.spinning {
+    animation: spin 2s infinite;
+}
+.loader {
+    position: absolute;
+    top: 50px;
+    left: 470px;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 530px;
+    left: 280px;
+}
+.btn {
+    margin-right: 100px;
+    width: 350px;
+    height: 65px;
+    background-color: #10A4F8;
+    border-color: #10A4F8;
+    color: white;
+    font-size: 30px;
+    border-radius: 40px;
+}
+.btn:hover {
+    background-color: rgb(144, 212, 6);
+    border-color: rgb(144, 212, 6);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+</style>
+<body>
+    <div class="loader">
+        <img src="./assets/spin.png" style="width: 400px;"class="spinning">
+    </div>
+    <div class="btns">
+       
+        <button class="btn"><a href="./index.html">Play with computer</a></button>
+        <button class="btn"><a href="./index.html">Play with friends</a></button>
+        
+    </div>
+</body>
+</html>
