@@ -3,7 +3,7 @@
   var paper = document.getElementById('paper');
   var scissors = document.getElementById('scissors');
   var btn = document.getElementById('btn')
-  
+  var audio = document.getElementById('sound')
 
   rock.addEventListener('click', function(){
     const ww = document.getElementById('ww')
@@ -26,6 +26,10 @@ let userChoice
 let computerChoice
 let result
 
+// computerChoiceDisplay.addEventListener('click', function(){
+//   const comp = document.querySelector('.comp')
+//   comp.innerHTML = ` <li id="handUp" class="class"><img src="./assets/paper.png"><br></li> `
+// } )
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChoice = e.target.id
   userChoiceDisplay.innerHTML = userChoice
@@ -34,7 +38,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 function generateComputerChoice() {
-  const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
+  const randomNumber = Math.floor(Math.random() * 3) + 1 
   
   if (randomNumber === 1) {
     computerChoice = 'rock'
@@ -71,4 +75,8 @@ function getResult() {
     result = 'you lose!'
   }
   resultDisplay.innerHTML = result
+}
+
+function sound(){
+  audio.play()
 }

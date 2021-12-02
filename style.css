@@ -6,15 +6,17 @@
     border: 1px solid rgb(219, 237, 241);
     text-align: center;
 } */
+body {
+   background-color: #f8f8bc;
+}
 li img {
     width: 100px;
 }
 
   li {
     list-style: none;
-    border-color: white;
     width: 160px;
-    background-color: rgba(196, 196, 196, 0.1);
+    background-color: rgba(106, 191, 201, 0.1);
     border: 1px solid rgb(219, 237, 241);
     text-align: center;
     border-radius: 20px;
@@ -54,5 +56,9 @@ li img {
     left: 800px;
 }
 .result {
-    
+    position: absolute;
+    top: 10px;
+    left: 490px;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
 }
