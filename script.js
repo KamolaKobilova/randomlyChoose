@@ -40,38 +40,68 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3) + 1 
   
+  // if (randomNumber === 'rock') {
+  //   computerChoice = `<h4>rock</h4><li id="rock" class="com"><img src="./assets/rock.png"><br>`
+  // }
+  // if (randomNumber === 'paper') {
+  //   computerChoice = `<li id="scissors" class="com"><img src="./assets/scissors.png">`
+  // }
+  // if (randomNumber === 'scissors') {
+  //   computerChoice = `<li id="paper" class="com"><img src="./assets/paper.png">`
+  // }
+  // computerChoiceDisplay.innerHTML = computerChoice }
+// }
+
+
   if (randomNumber === 1) {
-    computerChoice = 'rock'
+    computerChoice = `<h4><li id="rock" class="com"><img src="./assets/rock.png"></h4>`
   }
   if (randomNumber === 2) {
-    computerChoice = 'scissors'
+    computerChoice =  `<h4></h4><li id="paper" class="com"><img src="./assets/paper.png"></h4>`
   }
   if (randomNumber === 3) {
-    computerChoice = 'paper'
+    computerChoice = `<h4></h4><li id="scissors" class="com"><img src="./assets/scissors.png"></h4>`
   }
   computerChoiceDisplay.innerHTML = computerChoice
 }
+  // if (randomNumber === 'rock') {
+  //   computerChoice =  `<h4>rock</h4><li id="rock" class="com"><img src="./assets/rock.png"><br>`
+  // }
+  // if (randomNumber === 'paper') {
+  //   computerChoice = `<li id="scissors" class="com"><img src="./assets/scissors.png">`
+  // }
+  // if (randomNumber === 'scissors') {
+  //   computerChoice = `<li id="paper" class="com"><img src="./assets/paper.png">`
+  // }
+  // computerChoiceDisplay.innerHTML = computerChoice 
+
 
 function getResult() {
-  if (computerChoice === userChoice) {
-    result = 'its a draw!'
-  }
-  if (computerChoice === 'rock' && userChoice === "paper") {
-    result = 'you win!'
-  }
-  if (computerChoice === 'rock' && userChoice === "scissors") {
-    result = 'you lost!'
-  }
-  if (computerChoice === 'paper' && userChoice === "scissors") {
-    result = 'you win!'
-  }
-  if (computerChoice === 'paper' && userChoice === "rock") {
+  if (computerChoice === `<h4><li id="rock" class="com"><img src="./assets/rock.png"></h4>` && userChoice === "scissors") {
     result = 'you lose!'
   }
-  if (computerChoice === 'scissors' && userChoice === "rock") {
+  if (computerChoice === `<h4><li id="rock" class="com"><img src="./assets/rock.png"></h4>` && userChoice === "rock") {
+    result = 'it\'s a draw!'
+  }
+  if (computerChoice ===  `<h4><li id="rock" class="com"><img src="./assets/rock.png"></h4>` && userChoice === "paper") {
+    result = 'you lose!'
+  }
+  if (computerChoice ===  `<h4><li id="rock" class="com"><img src="./assets/rock.png"></h4>` && userChoice === "scissors") {
     result = 'you win!'
   }
-  if (computerChoice === 'scissors' && userChoice === "paper") {
+  if (computerChoice === ` <h4></h4><li id="paper" class="com"><img src="./assets/paper.png"></h4>` && userChoice === "rock") {
+    result = 'you win!'
+  }
+  if (computerChoice === ` <h4></h4><li id="paper" class="com"><img src="./assets/paper.png"></h4>` && userChoice === "paper") {
+    result = 'it\'s a draw!'
+  }
+  if (computerChoice === ` <h4></h4><li id="paper" class="com"><img src="./assets/paper.png"></h4>` && userChoice === "scissors") {
+    result = 'you win!'
+  }
+  if (computerChoice === `<h4></h4><li id="scissors" class="com"><img src="./assets/scissors.png"></h4>` && userChoice === "rock") {
+    result = 'you lose!'
+  }
+  if (computerChoice === `<h4></h4><li id="scissors" class="com"><img src="./assets/scissors.png"></h4>` && userChoice === "paper") {
     result = 'you lose!'
   }
   resultDisplay.innerHTML = result

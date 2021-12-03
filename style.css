@@ -62,3 +62,41 @@ li img {
     font-size: 40px;
     font-family:Arial, Helvetica, sans-serif;
 }
+.com {
+    margin-top: -250px;
+  
+    height: 100px;
+    padding: 70px;
+    width: 200px;
+    position: absolute;
+    top: -70px;
+   
+    width: 120px;
+    height: 120px;
+    margin-top: -220px;
+    text-align: center;
+    border-radius: 50%;
+}
+.com img {
+    width: 150px;
+   
+}
+/* .questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.pct {
+    /* position: absolute;
+    top: 100px;
+    left: 400px; */
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 100px;
+   
+} */
