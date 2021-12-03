@@ -49,6 +49,23 @@ a {
     text-decoration: none;
     color: white;
 }
+.btnss {
+    position: absolute;
+    top: -500px;
+    right: -120px;
+}
+.btnss button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(37, 226, 37);
+    border-color: rgb(37, 226, 37);
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+.btnss button:hover {
+    transform: scale(1.1);
+}
 
 </style>
 <body>
@@ -56,10 +73,31 @@ a {
         <img src="./assets/spin.png" style="width: 400px;"class="spinning">
     </div>
     <div class="btns">
-       
+        <audio src="./assets/Audio Games - Witches (Angels)_(newmp3.org).mp3" id="sounds">
+          
+        </audio>
         <button class="btn"><a href="./index.html">Play with computer</a></button>
         <button class="btn"><a href="./index.html">Play with friends</a></button>
-        
+        <div class="btnss">
+            <button onclick="onn()"> Music on</button>
+            <button onclick="soundOff()">off</button>
+        </div>
+       
     </div>
+    <script>
+        // var sound = document.getElementById('sound')
+
+        // setTimeout(function onn(){
+        //  document.getElementById('sounds').play()
+        //     }, 1000)
+
+   
+            function soundOff(){
+                sounds.pause()
+            }
+            function onn(){
+                sounds.play()
+            }
+    </script>
 </body>
 </html>

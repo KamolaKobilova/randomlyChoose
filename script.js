@@ -35,6 +35,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   userChoiceDisplay.innerHTML = userChoice
   generateComputerChoice()
   getResult()
+  getSound()
 }))
 
 function generateComputerChoice() {
@@ -106,7 +107,17 @@ function getResult() {
   }
   resultDisplay.innerHTML = result
 }
+// function getSound(){
+//   if(result === 'you lose!'){
+//     audio.play()
+//   }
+// }
 
 function sound(){
   audio.play()
 }
+// function playAudio(){
+//   if(result === 'you win!')
+//   document.getElementById('sound').play()
+// }
+// 
