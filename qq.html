@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main_left">
+           <form id="form">
+                <input type="url" placeholder="Image" id="image">
+                <input type="text" placeholder="Food Name" id="foodName">
+                <input type="number"  placeholder="Price" id="price"> 
+                <input type="text" placeholder="Description" id="description">
+                <button id="btn">Save</button>
+           </form>
+        </div>
+        <div class="main_right">
+            <!-- <div class="box">
+                <img src="./oranges.png" height="70px" alt="" class="main_img">
+                <div class="box_div">
+                    <h5 class="main_title">Organic food</h5>
+                    <p class="main_subtitle">13.5$</p>
+                </div>
+                <p class="main_desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo maiores molestiae dignissimos. Voluptate nihil cum iure magnam et excepturi, officia placeat nulla saepe non facere!
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <script>
+       const form = document.getElementById('form')
+
+
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault()
+    const image = document.getElementById('image').value
+    const foodName = document.getElementById('foodName').value
+    const price = document.getElementById('price').value
+    const desc = document.getElementById('description').value
+    const right = document.querySelector('.main_right')
+
+    const card = `
+    <div class="box" onclick=${"removeBox(event)"}>
+        <img src="${image}" height="60px" alt="" class="main_img">
+        <div class="box_div">
+            <h5 class="main_title">${foodName}</h5>
+            <p class="main_subtitle">${price}$</p>
+        </div>
+        <p class="main_desc">${desc}</p>
+    </div>
+    `
+    right.innerHTML += card
+    document.getElementById('image').value = ''
+    document.getElementById('foodName').value = ''
+    document.getElementById('price').value = ''
+    document.getElementById('description').value = ''
+})
+ 
+function removeBox(e){
+    console.log(e)
+    e.target.remove() 
+
+}
+
+    </script>
+</body>
+</html>
